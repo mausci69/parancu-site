@@ -141,14 +141,26 @@
     <h2>How it works</h2>
 
     <div class="pipeline">
-      Document → ParancU → Generate → Verify → Grounded answer
+      Document → ParancU Retrieval → Evidence Fusion → Generate → Verify → Grounded Answer
+      <br>
+      Verify → Missing Evidence → ParancU Retrieval
     </div>
 
     <div class="step">
-      <h3>Retrieve locally</h3>
+      <h3>Retrieve and expand</h3>
       <p>
-        ParancU finds and ranks the relevant evidence. Prepared ParancU
-        corpora can be searched without an API key.
+        ParancU retrieves the strongest evidence first. When the available
+        evidence is incomplete, Agent Lab turns the missing information into
+        a new retrieval question and searches for additional relevant chunks.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>Fuse evidence</h3>
+      <p>
+        Evidence from multiple ParancU chunks is accumulated before the final
+        answer, supporting questions whose information is distributed across
+        different parts of the document.
       </p>
     </div>
 
@@ -162,10 +174,11 @@
     </div>
 
     <div class="step">
-      <h3>Verify before answering</h3>
+      <h3>Verify and iterate</h3>
       <p>
-        The workflow checks generated answers against the retrieved
-        evidence before accepting them.
+        The workflow checks whether the accumulated evidence supports a
+        complete answer. If information is still missing, retrieval can run
+        again before the grounded answer is accepted.
       </p>
     </div>
 
