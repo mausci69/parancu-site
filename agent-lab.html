@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ParancU Agent Lab | Grounded AI Workflows</title>
+
+  <meta
+    name="description"
+    content="ParancU Agent Lab explores grounded AI workflows built on top of ParancU evidence retrieval."
+  >
+
+  <style>
+    body {
+      margin: 0;
+      background: #003c32;
+      color: #f4fff9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 72px 28px;
+    }
+
+    h1 {
+      font-size: 52px;
+      margin: 0 0 4px;
+    }
+
+    h2 {
+      margin-top: 48px;
+    }
+
+    .tagline {
+      color: #55d9ad;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    a {
+      color: #55d9ad;
+    }
+
+    .primary-link {
+      display: inline-block;
+      margin-top: 12px;
+      margin-right: 12px;
+      padding: 11px 18px;
+      border: 1px solid #55d9ad;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .secondary-link {
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+
+    .pipeline {
+      margin: 28px 0;
+      padding: 20px;
+      border: 1px solid rgba(85, 217, 173, .45);
+      border-radius: 8px;
+      color: #55d9ad;
+      font-weight: 700;
+      text-align: center;
+      line-height: 2;
+    }
+
+    .step {
+      margin-top: 28px;
+    }
+
+    .step h3 {
+      margin-bottom: 4px;
+    }
+
+    .step p {
+      margin-top: 0;
+      color: #d7eee6;
+    }
+
+    nav {
+      margin-top: 56px;
+    }
+
+    nav a {
+      margin-right: 24px;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 72px;
+      opacity: .7;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 48px 22px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .pipeline {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>ParancU Agent Lab</h1>
+    <div class="tagline">From evidence retrieval to grounded answers.</div>
+
+    <p>
+      ParancU Agent Lab explores what happens when ParancU retrieval
+      becomes the evidence layer of an agentic AI workflow.
+    </p>
+
+    <a class="primary-link" href="https://lab.parancu.com" target="_blank" rel="noopener noreferrer">Launch Agent Lab →</a>
+
+    <a
+      class="secondary-link"
+      href="https://github.com/mausci69/parancu-agent-lab"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View on GitHub →
+    </a>
+
+    <h2>How it works</h2>
+
+    <div class="pipeline">
+      Document → ParancU → Generate → Verify → Grounded answer
+    </div>
+
+    <div class="step">
+      <h3>Retrieve locally</h3>
+      <p>
+        ParancU finds and ranks the relevant evidence. Prepared ParancU
+        corpora can be searched without an API key.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>Generate optionally</h3>
+      <p>
+        Add a temporary OpenAI API key to generate an answer from the
+        retrieved evidence. The key is held in server memory for the
+        browser session and is not persisted.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>Verify before answering</h3>
+      <p>
+        The workflow checks generated answers against the retrieved
+        evidence before accepting them.
+      </p>
+    </div>
+
+    <h2>Retrieval remains visible</h2>
+
+    <p>
+      Agent Lab does not replace ParancU's evidence-first approach.
+      It builds on it: retrieval remains inspectable while generation
+      and verification are added as optional layers.
+    </p>
+
+    <nav>
+      <a href="index.html">← ParancU</a>
+      <a
+        href="https://github.com/mausci69/parancu-agent-lab"
+        target="_blank"
+        rel="noopener noreferrer"
+      >GitHub</a>
+    </nav>
+
+    <footer>
+      © 2026 Maurizio Scibilia · ParancU
+    </footer>
+  </main>
+</body>
+</html>
