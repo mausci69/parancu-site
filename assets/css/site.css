@@ -415,6 +415,30 @@ img {
   align-content:start;
   font-size:.84rem;
 }
+.footer-badges {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-top:28px;
+}
+.footer-badges a {
+  display:inline-flex;
+  max-width:100%;
+}
+.footer-badges img {
+  display:block;
+  max-width:100%;
+}
+.footer-badges .peerpush-badge {
+  width:230px;
+  height:auto;
+}
+.footer-badges .tinyhunt-badge {
+  height:44px;
+  width:auto;
+}
 .footer-bottom {
   border-top:1px solid var(--line);
   padding-top:24px;
