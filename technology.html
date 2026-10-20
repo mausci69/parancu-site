@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Technology &amp; approach | ParancU Lab</title>
-  <meta name="description" content="How ParancU combines inspectable evidence, multilingual embeddings and lexical anchors, and investigates factual representations and sufficiency.">
+  <meta name="description" content="From document preparation and retrieval to experimental evidence assessment. Explore the approach and processing boundaries of ParancU iOS and Agent Lab.">
   <meta name="theme-color" content="#003c32">
   <link rel="canonical" href="https://parancu.com/technology.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Technology &amp; approach | ParancU Lab">
-  <meta property="og:description" content="How ParancU combines inspectable evidence, multilingual embeddings and lexical anchors, and investigates factual representations and sufficiency.">
+  <meta property="og:description" content="From document preparation and retrieval to experimental evidence assessment. Explore the approach and processing boundaries of ParancU iOS and Agent Lab.">
   <meta property="og:url" content="https://parancu.com/technology.html">
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
@@ -37,73 +37,55 @@
 <main id="main" tabindex="-1">
 <section class="page-intro wrap">
 <p class="eyebrow">Technology</p>
-<h1>Make the path to evidence<br><em>inspectable.</em></h1>
-<p class="lead">The technical approach separates finding a relevant passage from deciding whether it supports a complete answer.</p>
+<h1>From documents<br><em>to evidence.</em></h1>
+<p class="lead">ParancU Lab develops technologies to retrieve information from documents while keeping the original sources visible and inspectable.</p>
+<p>Our approach distinguishes finding relevant passages from determining whether they contain enough information to answer a question.</p>
 </section>
 <section class="section wrap">
-<div class="section-heading">
-<h2>From question to source</h2><span class="status">Implemented retrieval</span>
-</div>
+<h2>How it works</h2>
 <ol class="process">
 <li><span>01 / PREPARE</span>
-<h3>Build a corpus</h3>
-<p>Split source text into passages and associate retrieval metadata with each passage.</p></li>
-<li><span>02 / MATCH</span>
-<h3>Compare meanings and anchors</h3>
-<p>Multilingual E5 embeddings provide semantic matching; lexical anchors give exact names and distinctive terms a role in ranking.</p></li>
-<li><span>03 / INSPECT</span>
-<h3>Return the evidence</h3>
-<p>Expose candidate passages, guiding questions, summaries and scores so the selected source remains visible.</p></li>
+<h3>Prepare</h3>
+<p>Create searchable document passages with retrieval representations.</p></li>
+<li><span>02 / RETRIEVE</span>
+<h3>Retrieve</h3>
+<p>Combine multilingual semantic matching and lexical signals to find potential evidence.</p></li>
+<li><span>03 / EVALUATE</span>
+<h3>Evaluate</h3>
+<p>Inspect passages; investigate whether evidence is sufficient, incomplete or unrelated.</p></li>
 </ol>
-<p class="note">Retrieval scores express ranking signals. They are not probabilities of truth or calibrated confidence.</p>
+<p class="note">Sufficiency evaluation is experimental, not integrated into ParancU iOS or a production pipeline.</p>
 </section>
 <section class="statement">
 <div class="wrap split">
+<div><h2>Beyond similarity</h2></div>
 <div>
-<p class="eyebrow">A boundary that matters</p>
-<h2>Similarity is useful.<br>Sufficiency is a separate question.</h2>
-</div>
-<div>
-<p>A passage may discuss the right topic but omit the requested date, condition or relationship. Decision Lab studies individual and paired evidence judgments, including missing-information diagnosis.</p>
-<p>Agent Lab adds generation and model-based verification to retrieval. A quotation can be present in a source without establishing that every claim is supported.</p><a class="text-link" href="research.html">Methods, findings & limitations →</a>
+<p>A document can discuss the right topic without containing the fact being requested.</p>
+<p>ParancU 2.0 and Decision Lab experimentally explore factual representations, richer question spaces and evidence sufficiency.</p>
 </div>
 </div>
 </section>
 <section class="section wrap">
-<p class="eyebrow">Processing boundaries</p>
-<h2>Local depends on the workflow.</h2>
-<div class="grid three">
+<h2>Data processing</h2>
+<div class="grid two">
 <article class="card">
 <h3>ParancU iOS</h3>
-<p>Corpus persistence, E5 inference, scoring and evidence inspection run on-device after preparation.</p>
-<p>Preparation sends source chunks to OpenAI for summaries and guiding questions using your API key.</p><a href="privacy.html">Read the iOS privacy policy →</a>
+<p>Local retrieval follows corpus preparation, which sends source chunks to OpenAI for metadata generation.</p>
+<a href="privacy.html">iOS privacy policy →</a>
 </article>
 <article class="card">
-<h3>Agent Lab: imported corpus</h3>
-<p>A prepared corpus can be held in browser memory and queried using browser E5, without OpenAI.</p>
-<p>This mode retrieves evidence; it does not generate or verify answers. Reloading clears the imported corpus.</p>
-</article>
-<article class="card">
-<h3>Agent Lab: server-assisted</h3>
-<p>TXT content is sent to the server. Preparation and generated/verified answers use OpenAI and a user-provided key.</p>
-<p>Server storage and optional operational telemetry have separate boundaries from the iOS app.</p><a href="agent-lab.html#data">Agent Lab data handling →</a>
+<h3>Agent Lab</h3>
+<p>Imported prepared corpora enable browser-local retrieval only. Separate server-assisted workflows send content to the server, using OpenAI for preparation, answers and verification.</p>
+<a href="agent-lab.html#data">Agent Lab data handling →</a>
 </article>
 </div>
-</section>
-<section class="section wrap split">
-<div><span class="status outline">In development</span>
-<h2>Representing access<br>to facts.</h2>
-</div>
-<div>
-<p>ParancU 2.0 investigates exact source-sentence chunks, natural-language factual units and multiple generated questions linked to their source. Implemented components preserve identifiers, offsets and embedding compatibility.</p>
-<p>These newer components are separate from Agent Lab’s overlapping three-sentence retrieval pipeline. Structural provenance does not certify semantic fidelity or complete question coverage.</p><a class="text-link" href="research.html#projects">Explore the research projects →</a>
-</div>
+<p class="note">Future cloud/API research treats document confidentiality as a central design requirement, without established production privacy safeguards, tenant isolation or enterprise security guarantees.</p>
 </section>
 <section class="cta wrap">
 <div>
-<p class="eyebrow">From a document problem to a measured pilot</p>
-<h2>Bring a question.<br>Start with the evidence.</h2>
-</div><a class="button" href="contact.html">Discuss a pilot project <span aria-hidden="true">↗</span></a>
+<h2>Explore further.</h2>
+<a class="text-link" href="research.html">Research & Development →</a>
+</div><a class="button" href="pilot.html">Pilot Projects <span aria-hidden="true">↗</span></a>
 </section>
 </main>
 <footer class="site-footer">
