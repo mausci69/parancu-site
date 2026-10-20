@@ -2,267 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>ParancU | Local-first Evidence Retrieval</title>
-
-  <meta
-    name="description"
-    content="ParancU is a local-first iOS application for multilingual evidence retrieval from your own documents."
-  >
-
-  <style>
-    body {
-      margin: 0;
-      background: #003c32;
-      color: #f4fff9;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 72px 28px;
-    }
-
-    h1 {
-      font-size: 56px;
-      margin: 0 0 4px;
-    }
-
-    h2 {
-      margin-top: 48px;
-    }
-
-    .agent-lab-feature {
-      margin: 48px 0;
-      padding: 28px 32px;
-      border: 1px solid #55d9ad;
-      border-radius: 18px;
-      background: rgba(85, 217, 173, 0.08);
-    }
-
-    .agent-lab-feature h2 {
-      margin-top: 0;
-      font-size: 30px;
-    }
-
-    .agent-lab-feature a {
-      display: inline-block;
-      margin-top: 6px;
-      padding: 10px 16px;
-      border-radius: 10px;
-      background: #55d9ad;
-      color: #003c32;
-      text-decoration: none;
-    }
-
-    .tagline {
-      color: #55d9ad;
-      font-size: 22px;
-      font-weight: 600;
-    }
-
-    a {
-      color: #55d9ad;
-    }
-
-    .primary-link {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 11px 18px;
-      border: 1px solid #55d9ad;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .resource-list {
-      margin-top: 18px;
-      padding: 0;
-      list-style: none;
-    }
-
-    .resource-list li {
-      margin: 14px 0;
-    }
-
-    .resource-list a {
-      font-weight: 600;
-    }
-
-    .resource-description {
-      display: block;
-      margin-top: 2px;
-      color: #d7eee6;
-      font-size: 15px;
-    }
-
-    nav {
-      margin-top: 42px;
-    }
-
-    nav a {
-      margin-right: 24px;
-      font-weight: 600;
-    }
-
-    footer {
-      margin-top: 72px;
-      font-size: 14px;
-      text-align: center;
-    }
-
-    @media (max-width: 600px) {
-      main {
-        padding: 48px 22px;
-      }
-
-      h1 {
-        font-size: 46px;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence-oriented AI for documents | ParancU Lab</title>
+  <meta name="description" content="ParancU Lab develops and evaluates inspectable document retrieval and evidence-grounded AI. Explore the app, research and industrial pilot collaborations.">
+  <meta name="theme-color" content="#003c32">
+  <link rel="canonical" href="https://parancu.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Evidence-oriented AI for documents | ParancU Lab">
+  <meta property="og:description" content="ParancU Lab develops and evaluates inspectable document retrieval and evidence-grounded AI. Explore the app, research and industrial pilot collaborations.">
+  <meta property="og:url" content="https://parancu.com/">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:image" content="https://parancu.com/assets/icons/icon-512x512.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="ParancU Lab PL monogram">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://parancu.com/assets/icons/icon-512x512.png">
+  <meta name="twitter:image:alt" content="ParancU Lab PL monogram">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-
 <body>
-  <main>
-    <h1>ParancU</h1>
-    <div class="tagline">Local-first evidence retrieval</div>
-
-    <h2>Find the evidence in your documents.</h2>
-
-    <p>
-      ParancU lets you import PDFs, paste text, scan pages or use images,
-      then ask questions and inspect the passages most relevant to what
-      you are looking for.
-    </p>
-
-    <p>
-      Rather than hiding retrieval behind a generated answer, ParancU
-      keeps the underlying evidence visible and lets you explore multiple
-      candidate passages.
-    </p>
-
-    <p>
-      Multilingual retrieval and an adjustable semantic-lexical balance
-      help connect questions to answer-bearing passages across different
-      kinds of documents.
-    </p>
-
-    <section class="agent-lab-feature">
-      <h2>ParancU Agent Lab</h2>
-      <p class="tagline">From evidence retrieval to grounded answers.</p>
-      <p>
-        ParancU Agent Lab builds on ParancU retrieval to fuse evidence across
-        multiple chunks, generate grounded answers, verify their support, and
-        retrieve again when information is missing.
-      </p>
-      <p>
-        <a href="agent-lab.html"><strong>Explore ParancU Agent Lab →</strong></a>
-      </p>
-    </section>
-
-    <h2>Get ParancU</h2>
-
-    <p>
-      ParancU 0.1.0 is available on the Apple App Store for iOS 17 or later.
-    </p>
-
-    <a
-      class="primary-link"
-      href="https://apps.apple.com/it/app/parancu/id6788739843"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View ParancU on the App Store
-    </a>
-
-    <h2>Explore the project</h2>
-
-    <ul class="resource-list">
-      <li>
-        <a href="parancu_v1_1_white_paper.pdf">
-          White paper
-        </a>
-        <span class="resource-description">
-          Architecture, retrieval design, evaluation methodology, results and research direction.
-        </span>
-      </li>
-
-      <li>
-        <a href="parancu_pitch.pdf">
-          Project overview
-        </a>
-        <span class="resource-description">
-          A concise introduction to the problem, approach, local-first architecture and current evaluation.
-        </span>
-      </li>
-
-      <li>
-        <a href="parancu_instructions.pdf">
-          ParancU instructions
-        </a>
-        <span class="resource-description">
-          How to prepare a corpus, configure the OpenAI API key, query documents and inspect retrieved evidence.
-        </span>
-      </li>
-
-      <li>
-        <a href="parancu_demo_script_and_test_queries.pdf">
-          Demo script and test queries
-        </a>
-        <span class="resource-description">
-          Suggested QA, evidence-containment, lexical-anchor and ambiguity tests for exploring retrieval behaviour.
-        </span>
-      </li>
-    </ul>
-
-    <h2>Local-first architecture</h2>
-
-    <p>
-      Corpus persistence, multilingual E5 embedding, semantic-lexical
-      scoring, ranking and evidence inspection operate on-device.
-      During corpus preparation, ParancU currently uses a constrained 
-      OpenAI API step to generate a short summary and one guiding 
-      question for each source chunk.
-    </p>
-
-    <nav>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
-    </nav>
-
-    <footer>
-      © 2026 Maurizio Scibilia · ParancU
-
-      <p style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;">
-        <a
-          href="https://peerpush.com/p/parancu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://peerpush.com/p/parancu/badge.png"
-            alt="ParancU on PeerPush"
-            style="width: 230px;"
-          >
-        </a>
-
-        <a
-          href="https://tinyhunt.dev/projects/parancu?utm_source=badge"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://r2.direasy-multi-tenant.focusapps.app/uploads/616d0b1a-3979-4b8c-94d1-b4f1fedd3ead/1783232956807/nynif7cioz/featured-on-light.svg"
-            alt="Featured on TinyHunt"
-            style="height: 44px; width: auto;"
-          >
-        </a>
-      </p>
-    </footer>
-  </main>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="header-inner"><a class="brand" href="index.html" aria-label="ParancU Lab home"><img class="brand-icon" src="assets/icons/apple-touch-icon.png" width="40" height="40" alt=""><span>ParancU <strong>Lab</strong></span></a>
+<nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="technology.html">Technology</a><a href="products.html">Products</a><a href="research.html">Research & Development</a><a href="pilot.html">Pilot Projects</a><a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero wrap">
+<div class="hero-copy">
+<p class="eyebrow">Independent research · Applied document AI</p>
+<h1>Find the evidence.<br><em>See what supports<br>the answer.</em></h1>
+<p class="lead">ParancU Lab develops and evaluates AI for working with documents: finding useful passages, inspecting their sources and assessing what they can support.</p>
+<div class="actions"><a class="button" href="pilot.html">Explore a pilot collaboration ↗</a><a class="text-link" href="products.html">Try the applications →</a>
+</div>
+</div>
+<aside class="evidence-panel" aria-label="The evidence-oriented approach">
+<p class="eyebrow">The approach</p>
+<div class="document-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i>
+</div>
+<p class="panel-title">A relevant passage<br>is the starting point.</p>
+<ol class="approach-list">
+<li><span>01</span> Retrieve source passages</li>
+<li><span>02</span> Inspect supporting evidence</li>
+<li><span>03</span> Evaluate sufficiency</li>
+</ol>
+<p class="small">Retrieval is available in the applications. Evidence-sufficiency judgments remain under evaluation.</p>
+</aside>
+</section>
+<section class="statement">
+<div class="wrap statement-inner">
+<p class="eyebrow">Built around a practical question</p>
+<h2>Does the document contain<br>what you need to know?</h2>
+<p>Technical documents can be relevant without containing the required fact. For example, a maintenance passage may describe a pump without stating its pressure limit for the operating condition in question. ParancU Lab keeps source evidence visible and studies that distinction before relying on a generated answer.</p>
+</div>
+</section>
+<section class="section wrap">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Use, explore, evaluate</p>
+<h2>Applications today.<br>Research for what comes next.</h2>
+</div><a class="text-link" href="products.html">All products & resources →</a>
+</div>
+<div class="grid three">
+<article class="card"><span class="status">Released product</span>
+<h3>ParancU for iOS</h3>
+<p>Import, paste or scan documents and inspect the passages retrieved for your question. Retrieval runs on-device after preparation.</p>
+<p class="small">Preparation uses a user-supplied OpenAI API key.</p><a href="products.html#parancu-ios">Explore the iOS app →</a>
+</article>
+<article class="card"><span class="status">Web application · Experimental workflows</span>
+<h3>ParancU Agent Lab</h3>
+<p>Explore document retrieval in the browser, or use server-assisted preparation, answer generation and verification.</p>
+<p class="small">Model verification is a safeguard, not proof of correctness.</p><a href="agent-lab.html">Explore Agent Lab →</a>
+</article>
+<article class="card muted"><span class="status outline">Research & Development</span>
+<h3>Represent. Retrieve. Assess.</h3>
+<p>ParancU 2.0 and Decision Lab investigate factual representations, evidence selection and missing-information diagnosis.</p>
+<p class="small">Implemented components and research findings are distinct from released capabilities.</p><a href="research.html">Read the research →</a>
+</article>
+</div>
+</section>
+<section class="section wrap split">
+<div>
+<p class="eyebrow">Industrial collaboration</p>
+<h2>Your documents.<br>A question worth testing.</h2>
+</div>
+<div>
+<p class="lead compact">ParancU Lab is seeking industrial partners for jointly scoped pilot projects.</p>
+<p>Potential areas include technical manuals, engineering reports, quality procedures and internal knowledge access. A pilot would establish the task, evaluate representative material and measure both useful retrieval and failure cases.</p><a class="text-link" href="pilot.html">How a pilot could work →</a>
+</div>
+</section>
+<section class="cta wrap">
+<div>
+<p class="eyebrow">From a document problem to a measured pilot</p>
+<h2>Bring a question.<br>Start with the evidence.</h2>
+</div><a class="button" href="contact.html">Discuss a pilot project <span aria-hidden="true">↗</span></a>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-top"><a class="brand" href="index.html">ParancU <strong>Lab</strong></a>
+<p>Evidence-oriented AI.<br>Independent work by Maurizio Scibilia.</p>
+<nav aria-label="Resources"><a href="support.html">App support</a><a href="privacy.html">iOS privacy policy</a><a href="products.html#resources">Documents</a><a href="agent-lab.html">Agent Lab</a>
+</nav>
+</div>
+<div class="footer-bottom"><span>© 2026 Maurizio Scibilia · ParancU Lab</span><a href="contact.html">Start a conversation ↗</a>
+</div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research &amp; Development | ParancU Lab</title>
+  <meta name="description" content="Explore ParancU 2.0, Decision Lab and Agent Lab research: methodology, selected experimental results, negative findings and open limitations.">
+  <meta name="theme-color" content="#003c32">
+  <link rel="canonical" href="https://parancu.com/research.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research &amp; Development | ParancU Lab">
+  <meta property="og:description" content="Explore ParancU 2.0, Decision Lab and Agent Lab research: methodology, selected experimental results, negative findings and open limitations.">
+  <meta property="og:url" content="https://parancu.com/research.html">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:image" content="https://parancu.com/assets/icons/icon-512x512.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="ParancU Lab PL monogram">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://parancu.com/assets/icons/icon-512x512.png">
+  <meta name="twitter:image:alt" content="ParancU Lab PL monogram">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="header-inner"><a class="brand" href="index.html" aria-label="ParancU Lab home"><img class="brand-icon" src="assets/icons/apple-touch-icon.png" width="40" height="40" alt=""><span>ParancU <strong>Lab</strong></span></a>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="technology.html">Technology</a><a href="products.html">Products</a><a href="research.html" aria-current="page">Research & Development</a><a href="pilot.html">Pilot Projects</a><a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<section class="page-intro wrap">
+<p class="eyebrow">Research & Development</p>
+<h1>Useful evidence.<br><em>Testable claims.</em></h1>
+<p class="lead">Research at ParancU Lab examines how document evidence is represented, retrieved and judged. Implementations, experimental observations and unresolved questions are reported separately.</p>
+<p>A passage can mention the right people, equipment or process yet leave out the fact a question needs. Matching factual evidence means preserving who did what, under which conditions; assessing sufficiency means checking whether all the information needed to answer is present. Similar wording alone does not settle either question.</p>
+</section>
+<section id="projects" class="section wrap">
+<div class="section-heading">
+<h2>Three connected lines of inquiry</h2>
+<p class="small">Research snapshot · 20 October 2026</p>
+</div>
+<div class="grid three">
+<article class="card"><span class="status outline">Implemented components · In development</span>
+<h3>ParancU 2.0</h3>
+<p>Source-linked factual representations and generated question spaces. The newer core supports exact source-sentence chunks, separate context and provenance.</p>
+<p class="small">Not a released 2.0 application or an already-integrated Agent Lab feature.</p>
+</article>
+<article class="card"><span class="status outline">Implemented selector · Reliability inconclusive</span>
+<h3>Decision Lab</h3>
+<p>Individual evidence judgments, partial-evidence pairs, missing-information diagnosis and targeted retrieval recovery.</p>
+<p class="small">Model labels are not human-certified facts. The selector is separate from Agent Lab’s answer workflow.</p>
+</article>
+<article class="card"><span class="status outline">Implemented application · Under evaluation</span>
+<h3>Agent Lab</h3>
+<p>Inspectable retrieval with optional answer generation, claim checks and two-chunk recovery.</p>
+<p class="small">A working mechanism does not establish reliable evidence sufficiency.</p><a href="agent-lab.html">Explore the application →</a>
+</article>
+</div>
+</section>
+<section class="statement">
+<div class="wrap">
+<p class="eyebrow">Method before headline numbers</p>
+<h2>Preserve the experiment.<br>Report what failed.</h2>
+<div class="grid three methodology">
+<div>
+<h3>Freeze and compare</h3>
+<p>Named studies preserve inputs, configurations and raw outputs, and compare against baselines. Some use repeated seeds or trials.</p>
+</div>
+<div>
+<h3>Separate evidence levels</h3>
+<p>Deterministic tests check software behaviour. Model judgments, synthetic labels and human-reviewed references have different evidential weight.</p>
+</div>
+<div>
+<h3>Keep the limitations</h3>
+<p>Report dataset size, annotation provenance, operational errors and negative findings. Related evidence sets are not independent trials.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section wrap">
+<p class="eyebrow">Selected recorded findings</p>
+<h2>Results in their actual scope.</h2>
+<p>These studies measure different tasks and cannot be combined into a Lab-wide accuracy score. The newer studies are research observations, not product performance promises.</p>
+<div class="table-scroll" role="region" aria-label="Selected experiments and limitations" tabindex="0">
+<table>
+<caption>Selected experiments · snapshot of recorded research</caption>
+<thead>
+<tr>
+<th scope="col">Study</th>
+<th scope="col">Recorded observation</th>
+<th scope="col">Limits & interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">ParancU 2.0 · factual accessibility</th>
+<td><span class="status">Experimentally verified observation</span>
+<p>On 12 claim contrasts, token-level MaxSim correctly ordered 10/12 pairs versus 8/12 for global E5 cosine. Role inversions were 1/3 versus 0/3.</p></td>
+<td>Small, related sample. This is pair ordering, not answer accuracy. General factual advantage remains <strong>inconclusive</strong>.</td>
+</tr>
+<tr>
+<th scope="row">ParancU 2.0 · learned matching</th>
+<td><span class="status outline">Inconclusive</span>
+<p>On 64 synthetic test contrasts across four test families, two seeds achieved 70.3% and 73.4% pair ordering versus 67.2% for global E5.</p></td>
+<td>Both failed the predefined success criterion. No demonstrated real-document generalization.</td>
+</tr>
+<tr>
+<th scope="row">ParancU 2.0 · source binding</th>
+<td><span class="status outline">Negative finding</span>
+<p>Both seeds remained at 50% pair accuracy and 0/4 groups correctly following both source assignments in a new test family.</p></td>
+<td>A narrow diagnostic failure, not proof that source attribution is generally impossible.</td>
+</tr>
+<tr>
+<th scope="row">Decision Lab · real retrieval</th>
+<td><span class="status">Experimentally verified observation</span>
+<p>Ten questions on one 75-chunk QA corpus: sufficiency-proxy checks passed on 6/9 answerable questions, with 6/10 correct overall outcomes.</p></td>
+<td>One diagnosis execution error; sentence-provenance coverage is a conservative proxy, not semantic answer quality.</td>
+</tr>
+<tr>
+<th scope="row">Decision Lab · requirement verification</th>
+<td><span class="status">Experimentally verified observation</span>
+<p>On 30 synthetic question families and 90 correlated evidence sets, 85/90 classifications matched frozen author labels.</p></td>
+<td>Four false COMPLETE and one false rejection. Labels were assistant-authored/reviewed, not independently human-validated; some scope was ambiguous.</td>
+</tr>
+<tr>
+<th scope="row">Agent Lab · multi-evidence</th>
+<td><span class="status">Experimentally verified observation</span>
+<p>A historical ten-question run passed 7/10 final-outcome checks; 1/4 intrinsically multi-evidence cases used multiple chunks.</p></td>
+<td>One prepared QA corpus. Outcome checks are not independent answer-accuracy validation or current production measurements.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="small">Selected newer findings are summarized from reviewed research records; not all underlying artifacts are publicly published. No independently validated product-wide reliability score is established.</p>
+</section>
+<section class="section wrap split">
+<div>
+<p class="eyebrow">Published research</p>
+<h2>The ParancU v1.1<br>white paper</h2><a class="button secondary" href="parancu_v1_1_white_paper.pdf">Read the white paper (PDF) ↗</a>
+</div>
+<div>
+<p>The paper reports local Top-5 evidence-containment maxima of 85% for Question Answering, 82% for Sicilia Normanna and 78% for reconstructed Multiple Sclerosis.</p>
+<p>Settings were selected on the evaluated benchmark grids. These are descriptive maxima, not held-out performance estimates. Python/mobile numerical parity was not established. These figures belong to that research snapshot, not ParancU 2.0 or Agent Lab.</p>
+</div>
+</section>
+<section class="section wrap">
+<p class="eyebrow">Open questions</p>
+<h2>What remains unresolved</h2>
+<div class="grid two">
+<article class="card muted">
+<h3>Fidelity and sufficiency</h3>
+<p>Extraction can lose conditions, misattribute arguments, leave references unresolved or duplicate meaning. Verification can confuse ownership with employment, alternatives with combinations, or affirmative truth with answerability.</p>
+</article>
+<article class="card muted">
+<h3>Validation and integration</h3>
+<p>Broader independently reviewed datasets, multilingual evaluation and deployment validation remain needed. A recorded cloud integration attempt stopped before inference; synthetic tests do not establish end-to-end semantic behaviour.</p>
+</article>
+</div>
+<p class="note">A hybrid-verifier study on 49 cases produced 33 validation errors, two uncertain outcomes and 14 decisive outputs, including two false COMPLETE judgments. Fewer counted false positives did not demonstrate correction when previous failures became errors.</p>
+</section>
+<section class="cta wrap">
+<div>
+<p class="eyebrow">From a document problem to a measured pilot</p>
+<h2>Bring a question.<br>Start with the evidence.</h2>
+</div><a class="button" href="contact.html">Discuss a pilot project <span aria-hidden="true">↗</span></a>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-top"><a class="brand" href="index.html">ParancU <strong>Lab</strong></a>
+<p>Evidence-oriented AI.<br>Independent work by Maurizio Scibilia.</p>
+<nav aria-label="Resources"><a href="support.html">App support</a><a href="privacy.html">iOS privacy policy</a><a href="products.html#resources">Documents</a><a href="agent-lab.html">Agent Lab</a>
+</nav>
+</div>
+<div class="footer-bottom"><span>© 2026 Maurizio Scibilia · ParancU Lab</span><a href="contact.html">Start a conversation ↗</a>
+</div>
+</footer>
+</body>
+</html>

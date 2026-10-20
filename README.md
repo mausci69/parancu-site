@@ -1,51 +1,64 @@
-# ParancU
+# ParancU Lab website
 
-ParancU is a local-first evidence retrieval application for user-provided documents.
+Static English-language website for ParancU Lab, the project identity for Maurizio Scibilia’s independent work on evidence-oriented document AI.
 
-It is designed to retrieve and expose answer-bearing passages rather than hide retrieval behind a generated answer. ParancU combines multilingual E5 embeddings with lexical and anchor evidence, while keeping retrieved source passages, guiding questions, summaries, and scores inspectable.
+Website: [parancu.com](https://parancu.com/). Web application: [ParancU Agent Lab](https://lab.parancu.com/).
 
-## App Store
+## Pages
 
-ParancU 0.1.0 is available on the Apple App Store for iOS 17 or later.
+| File | Purpose |
+| --- | --- |
+| `index.html` | Lab identity, applications and collaboration |
+| `technology.html` | Retrieval approach and processing boundaries |
+| `products.html` | iOS app, Agent Lab and all existing downloads |
+| `research.html` | Research projects, methodology, scoped observations and negative findings |
+| `pilot.html` | Potential industrial applications and proposed pilot process |
+| `contact.html` | Existing author contact |
+| `agent-lab.html` | Application workflow, bounded recovery and data handling |
+| `support.html` | Existing ParancU iOS support information |
+| `privacy.html` | Existing iOS privacy policy, with application scope clarified |
 
-[View ParancU on the Apple App Store](https://apps.apple.com/it/app/parancu/id6788739843)
+All content pages share `assets/css/site.css`, navigation, footer and keyboard skip link. There is no framework, build dependency, JavaScript navigation, analytics, contact-form backend or externally loaded font/image dependency.
 
-## Project materials
+## Products and resources
 
-* [ParancU v1.1 White Paper](parancu_v1_1_white_paper.pdf)
-* [ParancU Pitch](parancu_pitch.pdf)
-* [ParancU Instructions](parancu_instructions.pdf)
-* [Demo Script and Test Queries](parancu_demo_script_and_test_queries.pdf)
+- [ParancU on the App Store](https://apps.apple.com/it/app/parancu/id6788739843)
+- [Agent Lab](https://lab.parancu.com/)
+- [White paper](parancu_v1_1_white_paper.pdf)
+- [Project overview](parancu_pitch.pdf)
+- [Instructions](parancu_instructions.pdf)
+- [Demo script and test queries](parancu_demo_script_and_test_queries.pdf)
+- [Maurizio Scibilia CV](Maurizio_Scibilia_CV.pdf)
 
-## Website
+PDF filenames, `agent-lab.html`, `support.html`, `privacy.html`, `CNAME`, `robots.txt` and the Google verification response remain available at their original paths. The sitemap lists all nine content pages. Root and `index.html` are both valid entry points; the root is canonical.
 
-[maurizioscibilia.com](https://www.maurizioscibilia.com/)
+## Local review
 
-This repository also contains the website, support page, and privacy page used for ParancU.
+Serve a temporary directory containing only public files with any static HTTP server. Exclude dotfiles and internal Markdown from previews. No build is required. Check all nine pages at desktop and mobile widths, keyboard navigation, internal links, PDF responses and the app links before publication.
 
-## Current architecture
+## Publication and internal material
 
-ParancU currently uses:
+The existing GitHub Pages publication mechanism is retained. `CNAME` remains `parancu.com`. No deployment is triggered by local edits; pushing or merging to a publishing branch is a separate owner-approved action.
 
-* local multilingual E5-small embeddings;
-* semantic plus lexical/anchor score fusion;
-* inspectable Top-5 source evidence;
-* OCR-assisted ingestion from camera or images;
-* a constrained OpenAI API step during corpus preparation to generate summaries and guiding questions;
-* local corpus persistence, query embedding, scoring, ranking, and evidence inspection after preparation.
+Internal editorial material is deliberately ignored by Git and excluded from the default Jekyll build. This is not access control: do not force-add internal documents to this public repository, bypass the exclusion with a raw-root deployment, or link their source register from the website. Public pages contain neither private filesystem paths nor internal source IDs. Research observations are dated and qualified; code, mock tests and model judgments are not presented as certified reliability.
 
-## Evaluation
+ParancU Lab is a project identity, not a claim of incorporation, institutional status or staffing. Potential pilot areas and enterprise cloud/API services are explicitly prospective. No customer deployment, partnership or commercial outcome is claimed.
 
-The current white paper reports local Top-5 evidence-containment results of:
+## Deployment review notes
 
-* 85% for Question Answering;
-* 82% for Sicilia Normanna;
-* 78% for Multiple Sclerosis.
+Keep the default GitHub Pages/Jekyll handling of `_config.yml` exclusions. If publishing changes to a custom artifact workflow later, assemble an explicit public-file artifact instead of uploading the repository root. Publication requires owner authorization.
 
-These are benchmark-specific descriptive results rather than universal performance claims.
+## Implementation verification — 20 October 2026
 
-## Author
+- Nine content pages checked in Chromium at 1440, 768, 390 and 320 CSS pixels: no document-level horizontal overflow. The research table scrolls within its labeled region on narrow screens.
+- All 170 local page, anchor and asset references resolve; navigation and keyboard skip-to-content work.
+- Root/index aliases, existing content URLs, sitemap, robots, search verification and all five PDF responses checked over a local public-only HTTP preview.
+- All five PDF files, CNAME, robots and Google verification are byte-identical to the fetched site baseline. Existing support/privacy statements are preserved.
+- The internal context and Git metadata return 404 in the public-only preview. Git ignores the context and Jekyll explicitly excludes it.
+- Source whitespace checks passed during the implementation review, before publication.
 
-Maurizio Scibilia
-AI Engineer | Retrieval, Evaluation & Applied AI Systems
+## Final branding verification — 20 October 2026
 
+The approved PL artwork supplies the header icon, PNG favicons, multi-size ICO, Apple touch icon and share metadata. The Apple touch icon is opaque RGB at 180×180, with neutral outer padding replaced by deep green; the central monogram is preserved. All nine headers use the same 40-pixel presentation. Icon assets are under `assets/icons/`, with `favicon.ico` and `site.webmanifest` at the root.
+
+Final local validation passed 36 nine-page layout checks at four desktop/mobile widths, keyboard navigation, 224 local references, image dimensions, original PDF/domain-resource integrity and preservation of approved body copy. The temporary icon preview was removed and excluded from both Git and Jekyll output. These checks do not certify rendering on physical iPhone hardware.

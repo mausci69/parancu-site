@@ -1,0 +1,4 @@
+# GitHub Pages/Jekyll: never emit the internal editorial source as a public page.
+exclude:
+  - PARANCU_LAB_CONTEXT.md
+  - icon-preview.html

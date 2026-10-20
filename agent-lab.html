@@ -2,206 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>ParancU Agent Lab | Grounded AI Workflows</title>
-
-  <meta
-    name="description"
-    content="ParancU Agent Lab explores grounded AI workflows built on top of ParancU evidence retrieval."
-  >
-
-  <style>
-    body {
-      margin: 0;
-      background: #003c32;
-      color: #f4fff9;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 72px 28px;
-    }
-
-    h1 {
-      font-size: 52px;
-      margin: 0 0 4px;
-    }
-
-    h2 {
-      margin-top: 48px;
-    }
-
-    .tagline {
-      color: #55d9ad;
-      font-size: 22px;
-      font-weight: 600;
-    }
-
-    a {
-      color: #55d9ad;
-    }
-
-    .primary-link {
-      display: inline-block;
-      margin-top: 12px;
-      margin-right: 12px;
-      padding: 11px 18px;
-      border: 1px solid #55d9ad;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .secondary-link {
-      display: inline-block;
-      margin-top: 12px;
-      font-weight: 600;
-    }
-
-    .pipeline {
-      margin: 28px 0;
-      padding: 20px;
-      border: 1px solid rgba(85, 217, 173, .45);
-      border-radius: 8px;
-      color: #55d9ad;
-      font-weight: 700;
-      text-align: center;
-      line-height: 2;
-    }
-
-    .step {
-      margin-top: 28px;
-    }
-
-    .step h3 {
-      margin-bottom: 4px;
-    }
-
-    .step p {
-      margin-top: 0;
-      color: #d7eee6;
-    }
-
-    nav {
-      margin-top: 56px;
-    }
-
-    nav a {
-      margin-right: 24px;
-      font-weight: 600;
-    }
-
-    footer {
-      margin-top: 72px;
-      opacity: .7;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      main {
-        padding: 48px 22px;
-      }
-
-      h1 {
-        font-size: 42px;
-      }
-
-      .pipeline {
-        text-align: left;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ParancU Agent Lab | ParancU Lab</title>
+  <meta name="description" content="Explore ParancU Agent Lab: browser-local retrieval, server-assisted answers, evidence verification and bounded two-chunk recovery.">
+  <meta name="theme-color" content="#003c32">
+  <link rel="canonical" href="https://parancu.com/agent-lab.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ParancU Agent Lab | ParancU Lab">
+  <meta property="og:description" content="Explore ParancU Agent Lab: browser-local retrieval, server-assisted answers, evidence verification and bounded two-chunk recovery.">
+  <meta property="og:url" content="https://parancu.com/agent-lab.html">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:image" content="https://parancu.com/assets/icons/icon-512x512.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="ParancU Lab PL monogram">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://parancu.com/assets/icons/icon-512x512.png">
+  <meta name="twitter:image:alt" content="ParancU Lab PL monogram">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-
 <body>
-  <main>
-    <h1>ParancU Agent Lab</h1>
-    <div class="tagline">From evidence retrieval to grounded answers.</div>
-
-    <p>
-      ParancU Agent Lab explores what happens when ParancU retrieval
-      becomes the evidence layer of an agentic AI workflow.
-    </p>
-
-    <a class="primary-link" href="https://lab.parancu.com" target="_blank" rel="noopener noreferrer">Launch Agent Lab →</a>
-
-    <a
-      class="secondary-link"
-      href="https://github.com/mausci69/parancu-agent-lab"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View on GitHub →
-    </a>
-
-    <h2>How it works</h2>
-
-    <div class="pipeline">
-      Document → ParancU Retrieval → Evidence Fusion → Generate → Verify → Grounded Answer
-      <br>
-      Verify → Missing Evidence → ParancU Retrieval
-    </div>
-
-    <div class="step">
-      <h3>Retrieve and expand</h3>
-      <p>
-        ParancU retrieves the strongest evidence first. When the available
-        evidence is incomplete, Agent Lab turns the missing information into
-        a new retrieval question and searches for additional relevant chunks.
-      </p>
-    </div>
-
-    <div class="step">
-      <h3>Fuse evidence</h3>
-      <p>
-        Evidence from multiple ParancU chunks is accumulated before the final
-        answer, supporting questions whose information is distributed across
-        different parts of the document.
-      </p>
-    </div>
-
-    <div class="step">
-      <h3>Generate optionally</h3>
-      <p>
-        When using the server-assisted workflow, a temporary OpenAI API key
-        can generate an answer from retrieved evidence. Imported prepared
-        corpora remain local to the browser and require no API key for retrieval.
-      </p>
-    </div>
-
-    <div class="step">
-      <h3>Verify and iterate</h3>
-      <p>
-        The workflow checks whether the accumulated evidence supports a
-        complete answer. If information is still missing, retrieval can run
-        again before the grounded answer is accepted.
-      </p>
-    </div>
-
-    <h2>Retrieval remains visible</h2>
-
-    <p>
-      Agent Lab does not replace ParancU's evidence-first approach.
-      It builds on it: retrieval remains inspectable while generation
-      and verification are added as optional layers.
-    </p>
-
-    <nav>
-      <a href="index.html">← ParancU</a>
-      <a
-        href="https://github.com/mausci69/parancu-agent-lab"
-        target="_blank"
-        rel="noopener noreferrer"
-      >GitHub</a>
-    </nav>
-
-    <footer>
-      © 2026 Maurizio Scibilia · ParancU
-    </footer>
-  </main>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="header-inner"><a class="brand" href="index.html" aria-label="ParancU Lab home"><img class="brand-icon" src="assets/icons/apple-touch-icon.png" width="40" height="40" alt=""><span>ParancU <strong>Lab</strong></span></a>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="technology.html">Technology</a><a href="products.html">Products</a><a href="research.html">Research & Development</a><a href="pilot.html">Pilot Projects</a><a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<section class="page-intro wrap">
+<p class="eyebrow">ParancU Agent Lab</p>
+<h1>From retrieved passages<br><em>to inspectable answers.</em></h1>
+<p class="lead">A web application exploring generation and verification on top of ParancU retrieval. The evidence remains visible throughout the workflow.</p>
+</section>
+<section class="wrap actions intro-actions"><a class="button" href="https://lab.parancu.com/">Launch Agent Lab ↗</a><a class="text-link" href="https://github.com/mausci69/parancu-agent-lab">View on GitHub ↗</a>
+</section>
+<section class="section wrap"><span class="status">Implemented application · Experimental workflows</span>
+<h2>Retrieve. Generate. Check.</h2>
+<ol class="process">
+<li><span>01 / RETRIEVE</span>
+<h3>Inspect candidates</h3>
+<p>E5 semantic matching and lexical anchors rank passages from the prepared corpus.</p></li>
+<li><span>02 / GENERATE</span>
+<h3>Use supplied evidence</h3>
+<p>The server-assisted workflow asks a model to answer from the retrieved passage.</p></li>
+<li><span>03 / VERIFY</span>
+<h3>Check support and coverage</h3>
+<p>A model assesses claims and missing concepts; software also checks source quotations.</p></li>
+</ol>
+<p class="note">Verification is model-dependent. A matching quotation and a model approval do not prove factual correctness.</p>
+</section>
+<section class="statement">
+<div class="wrap split">
+<div>
+<p class="eyebrow">Bounded evidence fusion</p>
+<h2>When one passage<br>is not enough.</h2>
+</div>
+<div>
+<p>A missing concept can trigger one recovery attempt. ParancU reranks the corpus, and a complement check looks for another passage that supplies missing support.</p>
+<p>The original and selected complementary chunk are supplied together for fresh generation and verification. This is a two-chunk workflow, not an unlimited retrieval loop or general multi-document planner.</p><a class="text-link" href="research.html">Recorded results & open limitations →</a>
+</div>
+</div>
+</section>
+<section id="data" class="section wrap">
+<p class="eyebrow">Choose a processing mode</p>
+<h2>Understand where data goes.</h2>
+<div class="grid two">
+<article class="card">
+<h3>Import a prepared corpus</h3>
+<p>Imported corpora stay in browser memory until the page is left or reloaded. Browser E5 embeds the query and retrieves evidence without OpenAI or an API key.</p>
+<p>Generate/Verify is unavailable for imported corpora in this mode. Model assets are loaded by the browser.</p>
+</article>
+<article class="card">
+<h3>Prepare a TXT document</h3>
+<p>TXT text is sent to the server and stored temporarily as a prepared corpus. Preparation and generated/verified answers send relevant content to OpenAI using the supplied session key.</p>
+<p>The web key is held in server-session memory. Optional telemetry is restricted by code to operational metadata. These mechanisms are not a privacy certification.</p>
+</article>
+</div>
+<p class="small">The <a href="privacy.html">ParancU iOS privacy policy</a> describes the mobile app. Its on-device processing boundary must not be applied to Agent Lab’s server-assisted workflow.</p>
+</section>
+<section class="section wrap">
+<h2>Practical boundaries</h2>
+<ul class="feature-list">
+<li>TXT preparation and prepared JSON exchange are implemented in the web app.</li>
+<li>There is no conversation memory or token streaming in the audited version.</li>
+<li>Preparation has no checkpoint/resume mechanism; retry can repeat metadata calls.</li>
+<li>Research results do not establish broad browser parity or dependable sufficiency judgments.</li>
+</ul>
+<p><a href="products.html#resources">Browse the existing project documents →</a></p>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-top"><a class="brand" href="index.html">ParancU <strong>Lab</strong></a>
+<p>Evidence-oriented AI.<br>Independent work by Maurizio Scibilia.</p>
+<nav aria-label="Resources"><a href="support.html">App support</a><a href="privacy.html">iOS privacy policy</a><a href="products.html#resources">Documents</a><a href="agent-lab.html">Agent Lab</a>
+</nav>
+</div>
+<div class="footer-bottom"><span>© 2026 Maurizio Scibilia · ParancU Lab</span><a href="contact.html">Start a conversation ↗</a>
+</div>
+</footer>
 </body>
 </html>
