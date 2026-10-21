@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research &amp; Development | ParancU Lab</title>
-  <meta name="description" content="From Agent Lab to current research in factual representation, interrogative space and evidence sufficiency. Explore the direction, status and limitations.">
+  <title>Research | ParancU Lab</title>
+  <meta name="description" content="Investigating semantic relevance, factual answer containment and evidence sufficiency through prototypes, controlled experiments and analysis of failure cases.">
   <meta name="theme-color" content="#003c32">
   <link rel="canonical" href="https://parancu.com/research.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Research &amp; Development | ParancU Lab">
-  <meta property="og:description" content="From Agent Lab to current research in factual representation, interrogative space and evidence sufficiency. Explore the direction, status and limitations.">
+  <meta property="og:title" content="Research | ParancU Lab">
+  <meta property="og:description" content="Investigating semantic relevance, factual answer containment and evidence sufficiency through prototypes, controlled experiments and analysis of failure cases.">
   <meta property="og:url" content="https://parancu.com/research.html">
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
@@ -21,6 +21,8 @@
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
   <meta property="og:image:alt" content="ParancU Lab PL monogram">
+  <meta name="twitter:title" content="Research | ParancU Lab">
+  <meta name="twitter:description" content="Investigating semantic relevance, factual answer containment and evidence sufficiency through prototypes, controlled experiments and analysis of failure cases.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="https://parancu.com/assets/icons/icon-512x512.png">
   <meta name="twitter:image:alt" content="ParancU Lab PL monogram">
@@ -30,79 +32,103 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="header-inner"><a class="brand" href="index.html" aria-label="ParancU Lab home"><img class="brand-icon" src="assets/icons/apple-touch-icon.png" width="40" height="40" alt=""><span>ParancU <strong>Lab</strong></span></a>
-<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="technology.html">Technology</a><a href="products.html">Products</a><a href="research.html" aria-current="page">Research & Development</a><a href="pilot.html">Pilot Projects</a><a href="contact.html">Contact</a>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="technology.html">Approach</a><a href="products.html">Projects</a><a href="research.html" aria-current="page">Research</a><a href="pilot.html">Collaborations</a><a href="contact.html">Contact</a>
 </nav>
 </div>
 </header>
 <main id="main" tabindex="-1">
 <section class="page-intro wrap">
-<p class="eyebrow">Research & Development</p>
-<h1>Beyond<br><em>semantic similarity.</em></h1>
-<p class="lead">A relevant topic is only a start. We study how to retrieve the facts a question needs and assess whether they are enough.</p>
+<p class="eyebrow">Applied AI Research · Information Retrieval · Evidence</p>
+<h1>Investigating what makes retrieved information<br><em>sufficient to answer a question.</em></h1>
+<p class="lead">ParancU Lab explores the limits of semantic document retrieval and investigates methods for identifying factual evidence within source material.</p>
+<p>The work combines prototype development, controlled experiments and evaluation of both successful and unsuccessful approaches.</p>
+<a class="text-link" href="#projects">Explore the research directions →</a>
 </section>
 <section class="statement">
 <div class="wrap split">
+<div><h2>Relevant does not necessarily mean sufficient.</h2></div>
 <div>
-<p class="eyebrow">From ParancU to Agent Lab</p>
-<h2>The first agentic evolution.</h2>
-</div>
-<div>
-<p>Agent Lab introduced agentic AI into ParancU retrieval: evidence-grounded answers, factual-support and completeness checks, and limited recovery.</p>
-<p>Agent Lab established the first experimental foundation for evidence-grounded answer generation and verification, informing our current research directions. <a class="text-link" href="agent-lab.html">Explore Agent Lab →</a></p>
+<p><strong>Semantic similarity is not answer containment.</strong> A passage can relate closely to a question without containing the facts needed to answer it. Embedding-based retrieval can find factual answers; similarity alone does not establish sufficiency.</p>
+<p><strong>Illustrative example, not an experimental result:</strong> a manual says, “Do not operate the pump above 60°C.” A question about whether operation at 80°C is permitted concerns the same topic, but an answer must preserve the prohibition and temperature condition.</p>
+<p>Missing qualifications, negation, incorrect factual relationships and incomplete evidence can make relevant passages misleading. Sometimes the answer is absent from the available documents. Recognizing these boundaries is an open research problem.</p>
 </div>
 </div>
 </section>
 <section id="projects" class="section wrap">
-<p class="eyebrow">Current research · Complementary directions</p>
-<h2>Represent the facts.<br>Assess the evidence.</h2>
+<p class="eyebrow">Interconnected research directions</p>
+<h2>Retrieve facts.<br>Examine the evidence.</h2>
 <div class="grid two">
-<article class="card"><span class="status outline">ParancU 2.0 · In development</span>
-<h3>Factual representation & interrogative space</h3>
-<p>Research explores extracting facts from document chunks and generating meaningful questions. This “interrogative space”—the questions a passage can answer—aims to retrieve answer-bearing evidence beyond thematic similarity.</p>
+<article class="card"><span class="status outline">Ongoing research</span>
+<h3>ParancU 2.0 — Factual retrieval</h3>
+<p>Investigates factual representations, question-oriented retrieval and alternatives to global semantic similarity, while examining source preservation, factual relationships and answer containment.</p>
+<p>No generally validated retrieval architecture has yet been established.</p>
 </article>
-<article class="card"><span class="status outline">Decision Lab · In development</span>
-<h3>Evidence sufficiency</h3>
-<p>Investigate whether passages provide sufficient, complementary evidence, what information is missing and how to retrieve more.</p>
+<article class="card"><span class="status outline">Experimental components</span>
+<h3>ParancU Decision Lab — Evidence assessment</h3>
+<p>Investigates evidence sufficiency, complementary passages, missing-information diagnosis, verification boundaries and targeted retrieval recovery.</p>
+<p>Tested components remain experimental. Integration with ParancU 2.0 is under development, not a validated combined product.</p>
+</article>
+<article class="card"><span class="status outline">Experimental application</span>
+<h3>Agent Lab — Applied experimentation</h3>
+<p>The earlier agentic evolution provides an environment for investigating retrieval, AI-assisted generation, source inspection and verification workflows.</p>
+<p>Generating an answer and verifying its support are separate challenges. Verification does not guarantee correctness.</p>
+<a class="text-link" href="agent-lab.html">Explore Agent Lab →</a>
 </article>
 </div>
-<p class="note">ParancU 2.0 focuses on finding answer-bearing evidence; Decision Lab investigates whether that evidence is sufficient. Their integration is currently under development.</p>
 </section>
 <section class="section wrap split">
+<div><p class="eyebrow">Evaluation</p>
+<h2>Evaluate the evidence,<br>including failure cases.</h2></div>
 <div>
-<p class="eyebrow">Research status</p>
-<h2>Working components.<br>Open questions.</h2>
-<p class="small">Research snapshot · 20 October 2026</p>
-</div>
-<div>
-<p>Implemented components include source-linked sentence representations, multiple-question retrieval and experimental evidence-selection logic.</p>
-<p>Baseline comparisons record successes and failures. Conditions, attribution and missing information remain difficult. Tests and model judgments do not establish general reliability; independent evaluation remains necessary.</p>
-</div>
-</section>
-<section class="section wrap split">
-<div>
-<p class="eyebrow">Looking ahead</p>
-<h2>Toward cloud & API integration.</h2>
-</div>
-<div>
-<p>Planned cloud/API integration would connect document preparation, retrieval and evidence assessment.</p>
-<p>Document confidentiality is a design requirement, not a guarantee. Processing, access and retention arrangements require definition and validation.</p>
+<p>Experiments examine whether:</p>
+<ul>
+<li>Relevant passages are retrieved and contain the required facts.</li>
+<li>Multiple passages jointly provide sufficient evidence.</li>
+<li>Important conditions and negations survive processing.</li>
+<li>Insufficient evidence is recognized.</li>
+<li>Conclusions remain traceable to the original source.</li>
+</ul>
+<p>Retrieval rankings and evidence-containment measures are distinct from answer correctness. High similarity or a successful isolated benchmark does not establish general factual reliability.</p>
 </div>
 </section>
 <section class="section wrap split">
+<div><p class="eyebrow">Findings &amp; limitations</p>
+<h2>What the experiments have shown,<br>and what remains unresolved.</h2>
+<p class="small">Research snapshot · 20 October 2026</p></div>
 <div>
-<p class="eyebrow">Publication</p>
-<h2>ParancU v1.1 white paper</h2>
+<p>ParancU v1.1 provided a working embedding-based retrieval baseline. Implemented newer components include source-linked sentence representations, multiple-question retrieval and experimental evidence-selection logic.</p>
+<p>Question-based representations and alternative matching strategies have been investigated. Some small controlled comparisons produced encouraging results, but learned-matching experiments failed their success criteria and a source-binding follow-up exposed attribution failures.</p>
+<p>Decision Lab has tested sufficiency and selection components in synthetic scenarios and selected real-document evaluations. Results include successful judgments, false sufficiency judgments and rejected sufficient evidence. Synthetic outcomes are not real-document performance estimates.</p>
+<p>Software tests and model-generated judgments do not constitute independent validation of factual correctness. General reliability and generalization beyond the evaluated material remain unestablished.</p>
 </div>
+</section>
+<section class="section wrap split">
+<div><p class="eyebrow">Open questions</p>
+<h2>Research remains open.</h2></div>
 <div>
-<p>The paper covers earlier retrieval architecture, evaluation and limitations, not the planned integrated system.</p>
+<ul>
+<li>How can retrieval distinguish topical similarity from factual answerability?</li>
+<li>How should conditions, negations and factual relationships be represented?</li>
+<li>When are multiple passages sufficient, and how should missing information be recognized?</li>
+<li>Which approaches generalize beyond controlled datasets?</li>
+<li>How can future architectures preserve privacy and source traceability?</li>
+</ul>
+<p>Cloud processing and API access are possible development directions, not established services or a committed architecture. Document confidentiality remains a design requirement; processing, access and retention arrangements require definition and validation.</p>
+</div>
+</section>
+<section class="section wrap split">
+<div><p class="eyebrow">Publication</p>
+<h2>ParancU v1.1 white paper</h2></div>
+<div>
+<p>The paper documents earlier retrieval architecture, evaluation and limitations. It does not validate the newer research directions.</p>
 <a class="button secondary" href="parancu_v1_1_white_paper.pdf">Read the white paper (PDF) ↗</a>
 </div>
 </section>
 <section class="cta wrap">
-<div>
-<p class="eyebrow">Industrial collaboration</p>
-<h2>Explore a question<br>worth testing.</h2>
-</div><a class="button" href="pilot.html">Explore pilot projects <span aria-hidden="true">↗</span></a>
+<div><h2>Research progresses by testing assumptions.</h2>
+<p>ParancU Lab documents implementations, experiments, failures and unresolved questions as part of an evolving investigation into document retrieval and factual evidence.</p>
+<a class="text-link" href="pilot.html">Explore potential collaborations →</a>
+</div><a class="button" href="products.html">Explore the projects <span aria-hidden="true">↗</span></a>
 </section>
 </main>
 <footer class="site-footer">

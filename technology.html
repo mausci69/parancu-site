@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Technology &amp; approach | ParancU Lab</title>
-  <meta name="description" content="From document preparation and retrieval to experimental evidence assessment. Explore the approach and processing boundaries of ParancU iOS and Agent Lab.">
+  <title>Approach | ParancU Lab</title>
+  <meta name="description" content="An experimental approach to document retrieval and evidence assessment: retrieve, inspect and assess. Explore research methods, maturity and limitations.">
   <meta name="theme-color" content="#003c32">
   <link rel="canonical" href="https://parancu.com/technology.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Technology &amp; approach | ParancU Lab">
-  <meta property="og:description" content="From document preparation and retrieval to experimental evidence assessment. Explore the approach and processing boundaries of ParancU iOS and Agent Lab.">
+  <meta property="og:title" content="Approach | ParancU Lab">
+  <meta property="og:description" content="An experimental approach to document retrieval and evidence assessment: retrieve, inspect and assess. Explore research methods, maturity and limitations.">
   <meta property="og:url" content="https://parancu.com/technology.html">
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
@@ -21,6 +21,8 @@
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
   <meta property="og:image:alt" content="ParancU Lab PL monogram">
+  <meta name="twitter:title" content="Approach | ParancU Lab">
+  <meta name="twitter:description" content="An experimental approach to document retrieval and evidence assessment: retrieve, inspect and assess. Explore research methods, maturity and limitations.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="https://parancu.com/assets/icons/icon-512x512.png">
   <meta name="twitter:image:alt" content="ParancU Lab PL monogram">
@@ -30,62 +32,73 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="header-inner"><a class="brand" href="index.html" aria-label="ParancU Lab home"><img class="brand-icon" src="assets/icons/apple-touch-icon.png" width="40" height="40" alt=""><span>ParancU <strong>Lab</strong></span></a>
-<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="technology.html" aria-current="page">Technology</a><a href="products.html">Products</a><a href="research.html">Research & Development</a><a href="pilot.html">Pilot Projects</a><a href="contact.html">Contact</a>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="technology.html" aria-current="page">Approach</a><a href="products.html">Projects</a><a href="research.html">Research</a><a href="pilot.html">Collaborations</a><a href="contact.html">Contact</a>
 </nav>
 </div>
 </header>
 <main id="main" tabindex="-1">
 <section class="page-intro wrap">
-<p class="eyebrow">Technology</p>
-<h1>From documents<br><em>to evidence.</em></h1>
-<p class="lead">ParancU Lab develops technologies to retrieve information from documents while keeping the original sources visible and inspectable.</p>
-<p>Our approach distinguishes finding relevant passages from determining whether they contain enough information to answer a question.</p>
+<p class="eyebrow">Approach</p>
+<h1>Retrieve. Inspect.<br><em>Assess.</em></h1>
+<p class="lead">ParancU Lab is an independent applied AI research and development initiative investigating how to find evidence in documents and assess what it can support.</p>
+<p>Semantic similarity can identify relevant passages. It does not guarantee that they contain the facts needed to answer a question.</p>
 </section>
 <section class="section wrap">
-<h2>How it works</h2>
+<h2>An experimental approach</h2>
 <ol class="process">
-<li><span>01 / PREPARE</span>
-<h3>Prepare</h3>
-<p>Create searchable document passages with retrieval representations.</p></li>
-<li><span>02 / RETRIEVE</span>
+<li><span>01 / RETRIEVE</span>
 <h3>Retrieve</h3>
-<p>Combine multilingual semantic matching and lexical signals to find potential evidence.</p></li>
-<li><span>03 / EVALUATE</span>
-<h3>Evaluate</h3>
-<p>Inspect passages; investigate whether evidence is sufficient, incomplete or unrelated.</p></li>
+<p>Identify potentially relevant source passages using embedding-based retrieval and experimental retrieval strategies.</p></li>
+<li><span>02 / INSPECT</span>
+<h3>Inspect</h3>
+<p>Examine the original source text, factual relationships, conditions, negations and supporting context.</p></li>
+<li><span>03 / ASSESS</span>
+<h3>Assess</h3>
+<p>Investigate whether retrieved information is sufficient to answer a question, including missing evidence and potentially misleading passages.</p></li>
 </ol>
-<p class="note">Sufficiency evaluation is experimental, not integrated into ParancU iOS or a production pipeline.</p>
+<p class="note">These stages describe the laboratory’s research approach, not a fully validated end-to-end capability. Evidence-sufficiency evaluation remains experimental and is not an integrated feature of ParancU iOS.</p>
 </section>
 <section class="statement">
 <div class="wrap split">
-<div><h2>Beyond similarity</h2></div>
+<div><h2>Measure successes.<br>Study failures.</h2></div>
 <div>
-<p>A document can discuss the right topic without containing the fact being requested.</p>
-<p>ParancU 2.0 and Decision Lab experimentally explore factual representations, richer question spaces and evidence sufficiency.</p>
+<p>We evaluate retrieval and evidence-assessment approaches through controlled experiments, examining:</p>
+<ul>
+<li>Semantic relevance versus factual answer containment.</li>
+<li>Factual representations and question-oriented retrieval.</li>
+<li>Evidence completeness and missing information.</li>
+<li>Verification limitations and unsupported answers.</li>
+<li>Source traceability and preservation of original meaning.</li>
+</ul>
+<p>Experimental findings document what was observed under specific test conditions, not general guarantees of reliability.</p>
 </div>
 </div>
 </section>
 <section class="section wrap">
-<h2>Data processing</h2>
+<h2>Research maturity &amp; processing boundaries</h2>
 <div class="grid two">
 <article class="card">
-<h3>ParancU iOS</h3>
-<p>Local retrieval follows corpus preparation, which sends source chunks to OpenAI for metadata generation.</p>
+<span class="status">Implemented</span>
+<h3>Retrieval &amp; applications</h3>
+<p>Existing components support document retrieval and source inspection. ParancU iOS runs retrieval locally after corpus preparation, which sends source chunks to OpenAI using a user-supplied API key.</p>
 <a href="privacy.html">iOS privacy policy →</a>
 </article>
 <article class="card">
-<h3>Agent Lab</h3>
-<p>Imported prepared corpora enable browser-local retrieval only. Separate server-assisted workflows send content to the server, using OpenAI for preparation, answers and verification.</p>
+<span class="status outline">Experimental</span>
+<h3>Agent Lab workflows</h3>
+<p>Agent Lab explores evidence inspection, answer generation, verification and limited recovery. Verification does not guarantee correctness.</p>
+<p>Imported prepared corpora support browser-local retrieval only. Separate server-assisted workflows send content to the server and use OpenAI for preparation, answers and verification.</p>
 <a href="agent-lab.html#data">Agent Lab data handling →</a>
 </article>
 </div>
-<p class="note">Future cloud/API research treats document confidentiality as a central design requirement, without established production privacy safeguards, tenant isolation or enterprise security guarantees.</p>
+<p class="note"><strong>Under investigation:</strong> ParancU 2.0 and ParancU Decision Lab explore new factual representations, question-oriented retrieval strategies, evidence sufficiency and complementary evidence selection.</p>
+<p>Cloud/API integration, enterprise privacy architecture and commercial deployment models remain possible future directions. Document confidentiality is a design requirement, not an established guarantee.</p>
 </section>
 <section class="cta wrap">
 <div>
 <h2>Explore further.</h2>
-<a class="text-link" href="research.html">Research & Development →</a>
-</div><a class="button" href="pilot.html">Pilot Projects <span aria-hidden="true">↗</span></a>
+<a class="text-link" href="research.html">Research →</a>
+</div><a class="button" href="pilot.html">Explore potential collaborations <span aria-hidden="true">↗</span></a>
 </section>
 </main>
 <footer class="site-footer">
